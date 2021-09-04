@@ -4,6 +4,9 @@
 :root {
     --font-light: #f7f7f7;
     --orange-main: #CD6326;
+    --orange-light: #E39128;
+    --orange-dark: #8F5613;
+    --header-bg: #02160b
 }
 
 *,
@@ -48,9 +51,14 @@ ul {
     overflow: hidden;
 }
 
+.header, .survival {
+    width: 100%;
+    background: var(--header-bg);
+}
+
 .header {
     height: 79px;
-    background-color: green;
+    
 }
 
 .header__row {
@@ -142,4 +150,67 @@ background: none;
 .menu__item:hover {
     opacity: 1;
     transition: opacity .2;
+}
+
+.survival {
+    height: 700px;
+    /* max-height: 700px; */
+}
+
+.survival_bg {
+    width: 1440px;
+    height: 779px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: url(./assets/images/survivalbg.jpg) no-repeat;
+}
+
+.survival__content {
+    padding: 204px 0 0 ;
+    max-width: 274px;
+}
+
+.survival__caption {
+    color: var(--orange-main);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.survival__text {
+    padding: 50px 0 55px;
+    font-family: 'Open Sans', sans-serif;
+    color: var(--font-light);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    text-align: justify;
+}
+
+.btn {
+    background: var(--orange-main);
+    border-radius: 5px;
+    font-size: 23px;
+    font-weight: 400;
+line-height: 27px;
+color: var(--font-light);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: var(--orange-light);
+}
+
+.btn:active {
+    background: var(--orange-dark);
+}
+
+.survival__donate {
+    padding: 16px 42px 17px 42px;
+    /* width: 160px; */
+    /* height: 60px; */
+
 }
