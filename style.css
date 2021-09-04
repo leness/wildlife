@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 :root {
-    --font-light: #f7f7f7
+    --font-light: #f7f7f7;
+    --orange-main: #CD6326;
 }
 
 *,
@@ -81,4 +82,64 @@ ul {
     font-size: 32px;
     font-weight: 400;
     text-transform: uppercase;
+}
+
+.menu {
+    width: 480px;
+}
+
+.menu__list {
+    width: 100%;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.menu__item:not(:last-child) {
+margin-right: 60px;
+}
+
+.menu__item_search {
+    width: 32px;
+    height: 32px;
+    background: url(./assets/images/search_icon.svg) center no-repeat;
+}
+
+.menu__item_search:hover {
+    cursor: pointer;
+}
+
+.menu__item_sign-in {
+    text-align: center;
+    background: none;
+    border: 2px solid var(--orange-main);
+    border-radius: 5px;
+}
+
+.menu__link {
+    width: 100%;
+    height: 100%;
+    display: block;
+    color: var(--font-light);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 23px;
+    font-weight: 400;
+    
+}
+.menu__link_btn {
+    padding: 6px 23px;
+background: none;
+}
+.menu__link_btn:hover {
+    background: var(--orange-main);
+    cursor: pointer;
+}
+
+.menu__item {
+    opacity: .75;
+}
+
+.menu__item:hover {
+    opacity: 1;
+    transition: opacity .2;
 }
