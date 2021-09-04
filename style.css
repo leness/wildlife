@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+    --font-light: #f7f7f7
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+body, ul, h1, h2, h3, h4, p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.wrapper {
+    margin: 0 auto;
+    padding: 0 120px;
+    width: 1440px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.header {
+    height: 79px;
+    background-color: green;
+}
+
+.header__row {
+    padding-top: 37px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 60px;
+    z-index: 50;
+}
+
+.logo {
+   
+    display: flex;
+    align-items: center;
+}
+
+.logo__link, .logo__image {
+    
+    width: 68px;
+    height: 59px;
+}
+
+.logo__title {
+    padding-left: 17px;
+    color: var(--font-light);
+    font-size: 32px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
